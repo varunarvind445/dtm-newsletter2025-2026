@@ -1,0 +1,1440 @@
+/*The same classes and properties will be used*/ 
+/*Navbar*/
+img.toastmasters-logo{
+    width: 200px;
+}
+nav.toastmasters-navbar{
+    background-color: #772432;
+    font-family: "Gotham-Medium";
+    font-size: 15pt;
+    padding-left: 25px;
+    position: relative;
+    overflow: visible !important; /*For dropdown menus that need to come out of the navbar.*/
+    scroll-behavior: smooth; /* For smooth scrolling */
+    -ms-overflow-style: none; /* Making the scrollbar invisible (but it'll still scroll horizontally) for 
+                                Internet Explorer/MS Edge*/
+    scrollbar-width: none; /* For Mozilla Firefox */
+    -webkit-overflow-scrolling: touch; /* For scrolling on touch screen displays. */
+    z-index: 2000 !important;
+}
+/* Reducing the navbar links width */
+div.toastmasters-container-fluid.container-fluid{
+    width: 1179px;
+    display: flex !important;
+    flex-direction: row !important;
+    margin-left: 0px !important;
+}
+
+/* Enables horizontal scrolling for nav links */
+nav.toastmasters-navbar .navbar-collapse{
+    overflow-x: auto; /* Enables horizontal scrolling for nav links */
+    overflow-y: hidden; /* Prevents vertical scroll inside the navbar */
+    -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer/Microsoft Edge */
+    scrollbar-width: none; /* For Mozilla Firefox */
+    -webkit-overflow-scrolling: touch; /* For scrolling on touch screen displays. */
+    margin-left: 30px;
+}
+/* Making the scrollbar invisible (but it'll still scroll horizontally). */
+nav.toastmasters-navbar .navbar-collapse::-webkit-scrollbar{
+    display: none; /* For Google Chrome/Safari */
+}
+/* Toastmasters Logo */
+img.toastmasters-logo{
+    width: 200px;
+}
+/* Navbar links */
+a.nav-link{
+    color: #ffffff;
+}
+/* Flex Container */
+ul.navbar-nav{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+ul.navbar-nav .nav-item {
+    display: inline-block !important;
+    white-space: nowrap !important;
+}
+/* Dropdown should appear OUTSIDE the navbar */
+nav.toastmasters-navbar .nav-item.dropdown {
+    position: relative !important; 
+    top: auto !important;
+    left: auto !important;
+    display: inline-block !important;
+}
+nav.toastmasters-navbar .nav-item.dropdown {
+    position: absolute;
+    top: 85px;
+    left: 1042px;
+    z-index: 3000;
+}
+nav.toastmasters-navbar .nav-item.dropdown .dropdown-menu.excom-members-dropdown-menu {
+    position: absolute;
+    top: 100%;   /* below the navbar */
+    left: 738px;     /* aligned with the link */
+    z-index: 3000;
+}
+nav.toastmasters-navbar .nav-item.dropdown .excom-members-tamil-dropdown-menu {
+    position: absolute;
+    top: 100%;   /* below the navbar */
+    left: 738px;     /* aligned with the link */
+    z-index: 3000;
+}
+nav.toastmasters-navbar .nav-item.dropdown .excom-members-malayalam-dropdown-menu {
+    position: absolute;
+    top: 100%;   /* below the navbar */
+    left:805px;   /* aligned with the link */
+    z-index: 3000;
+}
+/* Force Club Members dropdown to appear outside and shifted */
+.toastmasters-navbar .navbar-nav .club-members-dropdown-menu {
+    width: 180px !important;
+    position: absolute !important;
+    top: 83px !important;
+    left: 1063px !important;  /* your custom offset */
+    z-index: 4000 !important;
+}
+
+nav.toastmasters-navbar .navbar-nav .club-members-tamil-dropdown-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 1002px !important;   /* your custom offset */
+    z-index: 4000 !important;
+}
+nav.toastmasters-navbar .navbar-nav .club-members-malayalam-dropdown-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 999px !important;   /* your custom offset */
+    z-index: 4000 !important;
+    font-family: "Myriad Pro";
+}
+/* Language Button (part of the navbar) */
+div.language-dropdown.dropdown{
+    position: relative;
+    right: 47px;
+}
+button.language-button{
+    width: 253px;
+    background-color: #a9b2b1;
+}
+button.language-button:hover{
+    background-color: #f2df74;
+    transition-delay: 1ms;
+}
+button.language-button:focus{
+    background-color: #f2df74;
+}
+nav.toastmasters-navbar div.dropdown{
+    position: relative; /* Lets the dropdown menu position itself correctly under the language button */
+    z-index: 1000; /* Lets the dropdown menu appear on top of the navbar instead of being cut off */
+}
+ul.language-bar-dropdown-menu{
+    width: 250px;
+    min-width: 250px;
+    position: absolute !important;
+    right: 0px;
+    left: auto;
+    transform: translateX(0); /* Prevents sudden movements */
+}
+/* Cover Page (English) */
+h1.Cover-page-title{
+    font-family: "Myriad Pro";
+    font-size: 35pt;
+    position: absolute;
+    top: 365px;
+    left: 350px;
+    text-align: center;
+}
+/*Common for all 3 language cover pages*/
+img.Cover-page-image{
+    filter: blur(9px);
+    width:660px;
+    position: relative;
+    left: 440px;
+}
+/* Cover Page (Tamil) */
+img.Tamil-Cover-page-image{
+    filter: blur(9px);
+    width:650px;
+    position: relative;
+    left: 440px;
+}
+h1.tamil-cover-page-title{
+text-align: center;
+position: relative;
+bottom: 435px;
+}
+/* Cover Page (Malayalam) */
+img.Malayalam-Cover-page-image{
+    filter: blur(9px);
+    width: 655px;
+    position: relative;
+    left: 440px;
+}
+h1.malayalam-cover-page-title{
+font-family: "Myriad Pro";
+text-align: center;
+position: relative;
+bottom: 435px;
+}
+/* Editor's Corner Newsletter (English) */
+section.editor-corner-newsletter-content-section{
+    height: 2290px;
+}
+h1.editor-corner-newsletter-title{
+    width: 1260px;
+    font-family: "Myriad Pro";
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 115px;
+}
+p.editor-corner-newsletter-paragraph{
+    width: 1012px;
+    position: relative;
+    top: 55px;
+    left: 260px;
+    font-family: "Myriad Pro";
+    font-size: 20pt;
+    text-align: left;
+}
+img.varun-photo{
+    width: 300px;
+    position: relative;
+    top: 90px;
+    left: 963px;
+}
+p.editor-corner-newsletter-signature{
+    width: 300px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 97px;
+    left: 962px;
+}
+/* Editor's Corner Newsletter (Tamil) */
+section.editor-corner-tamil-newsletter-content-section{
+    height: 3450px;
+}
+h1.editor-corner-tamil-newsletter-title{
+    width: 1260px;
+    font-family: "Myriad Pro";
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 115px;
+}
+p.editor-corner-tamil-newsletter-paragraph{
+    width: 1012px;
+    position: relative;
+    top: 55px;
+    left: 260px;
+    font-family: "Myriad Pro";
+    font-size: 20pt;
+    text-align: center;
+}
+img.varun-tamil-photo{
+    width: 300px;
+    position: relative;
+    top: 75px;
+    left: 963px;
+}
+p.editor-corner-tamil-newsletter-signature{
+    width: 300px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 82px;
+    left: 962px;
+}
+/* Editor's Corner Newsletter (Malayalam) */
+section.editor-corner-malayalam-newsletter-content-section{
+    height: 3490px;
+}
+h1.editor-corner-malayalam-newsletter-title{
+    width: 1260px;
+    font-family: "Myriad Pro";
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 115px;
+}
+p.editor-corner-malayalam-newsletter-paragraph{
+    width: 1035px;
+    position: relative;
+    top: 55px;
+    left: 240px;
+    font-family: "Myriad Pro";
+    font-size: 20pt;
+    text-align: left;
+}
+img.varun-malayalam-photo{
+    width: 300px;
+    position: relative;
+    top: 95px;
+    left: 963px;
+}
+p.editor-corner-malayalam-newsletter-signature{
+    width: 300px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 105px;
+    left: 962px;
+}
+/* District Director's Newsletter (English) */
+section.district-director-newsletter-content-section{
+    height: 1363px;
+}
+p.district-director-newsletter-paragraph{
+    width: 1012px;
+    position: relative;
+    top: 55px;
+    left: 250px;
+    font-size: 20pt;
+    text-align: left;
+}
+img.sujil-photo{
+    width: 300px;
+    position: relative;
+    top: 55px;
+    left: 894px;
+}
+p.district-director-newsletter-signature{
+    width: 421px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 64px;
+    left: 831px;
+}
+/* District Director's Newsletter (Tamil) */
+section.district-director-tamil-newsletter-content-section{
+    height: 1730px;
+}
+p.district-director-tamil-newsletter-paragraph{
+    width: 1012px;
+    position: relative;
+    top: 55px;
+    left: 260px;
+    font-size: 20pt;
+    text-align: left;
+}
+img.tamil-newsletter-sujil-photo{
+    width: 200px;
+    position: relative;
+    top: 55px;
+    left: 891px;
+}
+p.district-director-tamil-newsletter-signature{
+    width: 548px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 64px;
+    left: 720px;
+}
+/* District Director's Newsletter (Malayalam) */
+section.district-director-malayalam-newsletter-content-section{
+    height: 1669px;
+}
+p.district-director-malayalam-newsletter-paragraph{
+    width: 1012px;
+    position: relative;
+    top: 55px;
+    left: 250px;
+    font-size: 20pt;
+    text-align: left;
+}
+img.malayalam-newsletter-sujil-photo{
+    width: 300px;
+    position: relative;
+    top: 80px;
+    left: 963px;
+}
+p.district-director-malayalam-newsletter-signature{
+    width: 300px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 83px;
+    left: 962px;
+}
+/* Division Director's Newsletter (English) */
+section.division-director-newsletter-content-section{
+    height: 2500px;
+}
+p.division-director-newsletter-paragraph{
+    width: 1012px;
+    position: relative;
+    top: 55px;
+    left: 250px;
+    font-size: 20pt;
+    text-align: left;
+}
+img.alwyn-photo{
+    width: 300px;
+    position: relative;
+    top: 55px;
+    left: 963px;
+}
+p.division-director-newsletter-signature{
+    width: 300px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 64px;
+    left: 962px;
+}
+/* Division Director's Newsletter (Tamil) */
+section.division-director-tamil-newsletter-content-section{
+    height: 3540px;
+}
+p.division-director-tamil-newsletter-paragraph{
+    width: 1012px;
+    position: relative;
+    top: 55px;
+    left: 250px;
+    font-size: 20pt;
+    text-align: left;
+}
+img.alwyn-tamil-photo{
+    width: 300px;
+    position: relative;
+    top: 55px;
+    left: 936px;
+}
+p.division-director-tamil-newsletter-signature{
+    width: 369px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 64px;
+    left: 894px;
+}
+/* Division Director's Newsletter (Malayalam) */
+section.division-director-malayalam-newsletter-content-section{
+    height: 4000px;
+}
+p.division-director-malayalam-newsletter-paragraph{
+    width: 1012px;
+    position: relative;
+    top: 55px;
+    left: 250px;
+    font-size: 20pt;
+    text-align: left;
+}
+img.alwyn-malayalam-photo{
+    width: 300px;
+    position: relative;
+    top: 55px;
+    left: 936px;
+}
+p.division-director-malayalam-newsletter-signature{
+    width: 369px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 64px;
+    left: 894px;
+}
+
+/* Area Director's Newsletter (English)*/
+section.area-director-newsletter-content-section{
+    height: 1360px;
+}
+p.area-director-newsletter-paragraph{
+    width: 1012px;
+    position: relative;
+    top: 55px;
+    left: 240px;
+    font-size: 20pt;
+    text-align: left;
+}
+img.mahaalakshmi-photo{
+    width: 250px;
+    position: relative;
+    top: 55px;
+    left: 989px;
+}
+p.area-director-newsletter-signature{
+    width: 300px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 64px;
+    left: 962px;
+}
+/* Area Director's Newsletter (Tamil)*/
+section.area-director-tamil-newsletter-content-section{
+    height: 1900px;
+}
+p.area-director-tamil-newsletter-paragraph{
+    width: 1012px;
+    position: relative;
+    top: 55px;
+    left: 240px;
+    font-size: 20pt;
+    text-align: left;
+}
+img.mahaalakshmi-tamil-photo{
+    width: 250px;
+    position: relative;
+    top: 55px;
+    left: 965px;
+}
+p.area-director-tamil-newsletter-signature{
+    width: 350px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 64px;
+    left: 908px;
+}
+/* Area Director's Newsletter (Malayalam)*/
+section.area-director-malayalam-newsletter-content-section{
+    height: 1900px;
+}
+p.area-director-malayalam-newsletter-paragraph{
+    width: 1012px;
+    position: relative;
+    top: 55px;
+    left: 240px;
+    font-size: 20pt;
+    text-align: left;
+}
+img.mahaalakshmi-malayalam-photo{
+    width: 250px;
+    position: relative;
+    top: 55px;
+    left: 965px;
+}
+p.area-director-malayalam-newsletter-signature{
+    width: 350px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 64px;
+    left: 908px;
+}
+/* Excom Members */
+/*President's newsletter (English)*/
+section.president-newsletter-content-section{
+    height: 1400px;
+}
+h1.president-newsletter-title{
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+div.president-newsletter-paragraph{
+    width: 1012px;
+    position: relative;
+    top: 55px;
+    left: 250px;
+    font-size: 20pt;
+    text-align: center;
+}
+p.president-newsletter-signature{
+    width: 300px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 110px;
+    left: 962px;
+}
+/* President's Newsletter (Tamil) */
+section.president-tamil-newsletter-content-section{
+    height: 2380px;
+}
+h1.president-tamil-newsletter-title{
+    width: 1260px;
+    font-family: "Myriad Pro";
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 130px;
+}
+div.president-tamil-newsletter-paragraph{
+    width: 1000px;
+    position: relative;
+    top: 55px;
+    left: 260px;
+    font-size: 20pt;
+    text-align: center;
+}
+ul.excom-tamil-members{
+    width: 903px;
+    padding: 6px 0px 6px 69px;
+    margin:0px
+}
+/* President's newletter Signature (Tamil) */
+p.president-tamil-newsletter-signature{
+    width: 300px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 106px;
+    left: 965px;
+}
+/* President's Newsletter (Malayalam) */
+section.president-malayalam-newsletter-content-section{
+    height: 2230px;
+}
+h1.president-malayalam-newsletter-title{
+    width: 1260px;
+    font-family: "Myriad Pro";
+    text-align: center;
+    position: relative;
+    top: 30px;
+    left: 130px;
+}
+div.president-malayalam-newsletter-paragraph{
+    width: 1000px;
+    position: relative;
+    top: 55px;
+    left: 260px;
+    font-size: 20pt;
+    text-align: center;
+}
+ul.excom-malayalam-members{
+    width: 903px;
+    padding: 6px 0px 6px 69px;
+    margin:0px
+}
+/* President's newletter Signature (Malayalam) */
+p.president-malayalam-newsletter-signature{
+    width: 300px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 106px;
+    left: 965px;
+}
+/* vpe newsletter (English)*/
+section.vpe-newsletter-content-section{
+height: 2200px;
+}
+h1.vpe-newsletter-title{
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+    top: 146px;
+    left: 250px;
+}
+p.vpe-newsletter-paragraph{
+    width: 1075px;
+    text-align: center;
+    position: relative;
+    top: 159px;
+    left: 211px;
+    font-size: 20pt;
+}
+img.Archana-film-poster{
+    width: 1000px;
+    position: relative;
+    top: 172px;
+    left: 272px;
+}
+/*Archana's Photo*/
+img.Archana-photo{
+    width: 300px;
+    position: relative;
+    top: 653px;
+    right: 75px;
+}
+/* vpe Newsletter signature*/
+p.vpe-newsletter-signature{
+    width: 400px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 554px;
+    left: 876px;
+}
+/* vpe newsletter (Tamil)*/
+section.vpe-tamil-newsletter-content-section{
+height:2990px;
+}
+h1.vpe-tamil-newsletter-title{
+    font-size: 26pt;
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+    top:140px;
+    left: 235px;
+}
+p.vpe-tamil-newsletter-paragraph{
+    width: 1075px;
+    text-align: center;
+    position: relative;
+    top: 175px;
+    left: 211px;
+    font-size: 20pt;
+}
+img.Archana-film-poster{
+    width: 800px;
+    margin-top: -130px;
+    margin-left:-550px;
+}
+/*Tamil vpe newsletter signature and photo movement*/
+img.Archana-tamil-photo{
+    width: 200px;
+    margin-top: 400px;
+    margin-left: 980px;
+    margin-bottom: 12px;
+    
+
+}
+p.tamil-vpe-newsletter-signature{
+    width: 400px;
+    text-align: center;
+    font-size: 18pt;
+    margin-left: 880px;
+}
+/* vpe newsletter (Malayalam)*/
+section.vpe-malayalam-newsletter-content-section{
+height: 3050px;
+}
+h1.vpe-malayalam-newsletter-title{
+    font-size: 26pt;
+    width: 1000px;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    top:100px;
+    left: 250px;
+}
+p.vpe-malayalam-newsletter-paragraph{
+    width: 1075px;
+    text-align: center;
+    position: relative;
+    top: 170px;
+    left: 211px;
+    font-size: 20pt;
+}
+/*Malayalam vpe newsletter signature and photo movement*/
+img.malayalam-newsletter-Archana-photo{
+    width: 225px;
+    position: relative;
+    top: 200px;
+    left: 980px;
+}
+p.vpe-malayalam-newsletter-signature{
+    width: 400px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 210px;
+    left: 886px;
+}
+/* VPM Newsletter (English)*/
+section.vpm-newsletter-content-section{
+    height: 971px;
+}
+h1.vpm-newsletter-title{
+    font-size: 26pt;
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+    top: 149px;
+    left: 250px;
+}
+p.vpm-newsletter-paragraph{
+    width: 1090px;
+    text-align: center;
+    position: relative;
+    top: 110px;
+    left: 211px;
+    font-size: 20pt;
+}
+/* Shiva's Photo */
+img.Shiva-photo{
+    width: 225px;
+    position: relative;
+    top: 123px;
+    left: 1043px;
+}
+/* VPM signature */
+p.vpm-newsletter-signature{
+    width: 310px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 130px;
+    left: 995px;
+}
+/* VPM Newsletter (Tamil)*/
+section.vpm-tamil-newsletter-content-section{
+    height: 1350px;
+}
+h1.vpm-tamil-newsletter-title{
+    font-size: 26pt;
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+    top:140px;
+    left: 250px;
+}
+p.vpm-tamil-newsletter-paragraph{
+    width: 1090px;
+    text-align: center;
+    position: relative;
+    top: 130px;
+    left: 211px;
+    font-size: 20pt;
+}
+/* Shiva's Photo */
+img.Shiva-tamil-photo{
+    width: 225px;
+    position: relative;
+    top: 156px;
+    left: 1036px;
+}
+/* VPM signature */
+p.vpm-tamil-newsletter-signature{
+    width: 310px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 160px;
+    left: 992px;
+}
+/* VPM Newsletter (Malayalam)*/
+section.vpm-malayalam-newsletter-content-section{
+    height: 1350px;
+}
+h1.vpm-malayalam-newsletter-title{
+    font-size: 26pt;
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+    top: 140px;
+    left: 250px;
+}
+p.vpm-malayalam-newsletter-paragraph{
+    width: 1090px;
+    text-align: center;
+    position: relative;
+    top: 130px;
+    left: 211px;
+    font-size: 20pt;
+}
+/* Shiva's Photo */
+img.Shiva-malayalam-photo{
+    width: 225px;
+    position: relative;
+    top: 156px;
+    left: 1036px;
+}
+/* VPM signature */
+p.vpm-malayalam-newsletter-signature{
+    width: 310px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 160px;
+    left: 992px;
+}
+/* Treasurer Newsletter (English) */
+h1.Treasurer-newsletter-title{
+    width: 1000px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    top:42px;
+    left: 250px;
+}
+section.Treasurer-Newsletter-content-section{
+    height: 1990px;
+}
+p.Treasurer-newsletter-paragraph{
+    width: 1061px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 221px;
+    font-size: 20pt;
+}
+img.Shabana-photo{
+    width: 225px;
+    position: relative;
+    top: 60px;
+    left: 1058px;
+}
+p.treasurer-newsletter-signature{
+    width: 200px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 60px;
+    left: 1071px;
+}
+/* Treasurer Newsletter (Tamil) */
+section.treasurer-tamil-Newsletter-content-section{
+    height: 3170px;
+}
+h1.treasurer-tamil-newsletter-title{
+    width: 1000px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    top:39px;
+    left: 250px;
+}
+p.treasurer-tamil-newsletter-paragraph{
+    width: 1061px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 221px;
+    font-size: 20pt;
+}
+img.tamil-newsletter-Shabana-photo{
+    width: 225px;
+    position: relative;
+    top: 80px;
+    left: 1042px;
+}
+p.treasurer-tamil-newsletter-signature{
+    width: 232px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 85px;
+    left: 1042px;
+}
+/* Treasurer Newsletter (Malayalam) */
+section.treasurer-malayalam-newsletter-content-section{
+    height: 3100px;
+}
+h1.treasurer-malayalam-newsletter-title{
+    width: 1000px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    top:39px;
+    left: 250px;
+}
+p.treasurer-malayalam-newsletter-paragraph{
+    width: 1061px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 221px;
+    font-size: 20pt;
+}
+img.malayalam-newsletter-Shabana-photo{
+    width: 225px;
+    position: relative;
+    top: 80px;
+    left: 1042px;
+}
+p.treasurer-malayalam-newsletter-signature{
+    width: 232px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 85px;
+    left: 1042px;
+}
+/* Secretary's Newsletter (English) */
+section.secretary-Newsletter-content-section{
+    margin: 0px 55px 0px;
+}
+h1.secretary-newsletter-title{
+    width: 1000px;
+    text-align: center;
+    position: relative;
+    top:30px;
+    left: 200px;
+}
+p.secretary-newsletter-paragraph{
+    width: 1000px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 205px;
+    font-size: 20pt;
+}
+p.secretary-newsletter-signature{
+    width: 400px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 80px;
+    left: 817px;
+}
+/* Secretary Newsletter (Tamil) */
+section.secretary-tamil-Newsletter-content-section{
+    margin: 0px 55px 0px;
+}
+h1.secretary-tamil-newsletter-title{
+    width: 1000px;
+    text-align: center;
+    position: relative;
+    top:30px;
+    left: 200px;
+}
+p.secretary-tamil-newsletter-paragraph{
+    width: 1000px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 205px;
+    font-size: 20pt;
+}
+p.secretary-tamil-newsletter-signature{
+    width: 400px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 80px;
+    left: 817px;
+}
+/* Secretary's Newsletter (Malayalam) */
+section.secretary-malayalam-Newsletter-content-section{
+    margin: 0px 55px 0px;
+}
+h1.secretary-malayalam-newsletter-title{
+    width: 1000px;
+    text-align: center;
+    position: relative;
+    top:30px;
+    left: 200px;
+}
+p.secretary-malayalam-newsletter-paragraph{
+    width: 1000px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 205px;
+    font-size: 20pt;
+}
+p.secretary-malayalam-newsletter-signature{
+    width: 400px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 90px;
+    left: 817px;
+}
+/* SAA Newsletter (English)*/
+section.saa-newsletter-content-section{
+    height: 1428px;
+}
+h1.saa-newsletter-title{
+    font-size: 26pt;
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+    top:142px;
+    left: 250px;
+}
+p.saa-newsletter-paragraph{
+    width: 1090px;
+    text-align: center;
+    position: relative;
+    top: 110px;
+    left: 211px;
+    font-size: 20pt;
+}
+/* Anumol's Photo */
+img.Anumol-photo{
+    width: 225px;
+    position: relative;
+    top: 123px;
+    left: 1058px;
+}
+/* SAA signature */
+p.saa-newsletter-signature{
+    width: 250px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 130px;
+    left: 1045px;
+}
+/* SAA Newsletter (Tamil)*/
+section.saa-tamil-newsletter-content-section{
+    height: 1890px;
+}
+h1.saa-tamil-newsletter-title{
+    font-size: 26pt;
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+    top:142px;
+    left: 250px;
+}
+p.saa-tamil-newsletter-paragraph{
+    width: 1090px;
+    text-align: center;
+    position: relative;
+    top: 110px;
+    left: 211px;
+    font-size: 20pt;
+}
+/* Anumol's Photo */
+img.Anumol-tamil-photo{
+    width: 225px;
+    position: relative;
+    top: 123px;
+    left: 1014px;
+}
+/* SAA signature */
+p.saa-tamil-newsletter-signature{
+    width: 347px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 130px;
+    left: 955px;
+}
+/* SAA Newsletter (Malayalam)*/
+section.saa-malayalam-newsletter-content-section{
+    height: 1890px;
+}
+h1.saa-malayalam-newsletter-title{
+    font-size: 26pt;
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+    top:150px;
+    left: 250px;
+}
+p.saa-malayalam-newsletter-paragraph{
+    width: 1090px;
+    text-align: center;
+    position: relative;
+    top: 110px;
+    left: 211px;
+    font-size: 20pt;
+}
+/* Anumol's Photo */
+img.Anumol-malayalam-photo{
+    width: 225px;
+    position: relative;
+    top: 123px;
+    left: 1014px;
+}
+/* SAA signature */
+p.saa-malayalam-newsletter-signature{
+    width: 347px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 130px;
+    left: 955px;
+}
+/* Club Members poems, newsletters, etc */
+button.single-language-button{
+    margin-right: 40px;
+    width: 253px;
+    background-color: #a9b2b1;
+}
+button.single-language-button:focus{
+    background-color: #f2df74;
+}
+/* President's Poem (Tamil) */
+section.Kalpana-tamil-poem-content-section{
+    height: 1100px;
+}
+h1.Kalpana-tamil-poem-title{
+    font-family: "Myriad Pro";
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+p.Kalpana-tamil-poem-paragraph{
+    width: 1000px;
+    position: relative;
+    top: 55px;
+    left: 235px;
+    font-size: 20pt;
+    text-align: center;
+}
+/* President's poem Signature (Tamil) */
+p.Kalpana-tamil-poem-signature{
+    width: 300px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 89px;
+    left: 930px;
+}
+/* Anthony's Poem */
+section.Anthony-tamil-poem-content-section{
+   height: 1320px;
+}
+h1.Anthony-tamil-poem-title{
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+p.Anthony-tamil-poem-paragraph{
+  width: 1000px;
+    position: relative;
+    top: 55px;
+    left: 235px;
+    font-size: 20pt;
+    text-align: center;
+}
+h1.Anthony-tamil-poem-title-2{
+    text-align: center;
+    margin: 85px 0px 0px;
+}
+p.Anthony-tamil-poem-paragraph-2{
+   width: 1000px;
+    position: relative;
+    top: 55px;
+    left: 235px;
+    font-size: 20pt;
+    text-align: center;
+}
+img.anthony-photo{
+    width: 200px;
+    position: relative; 
+    left: 995px; 
+    top: 78px;
+}
+/* Anthony's poem Signature (Tamil) */
+p.Anthony-tamil-poem-signature{
+    width: 300px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 85px;
+    left: 940px;
+}
+/* Rosmy's newsletter article */
+section.Rosmy-newsletter-content-section{
+height: 1300px;
+}
+h1.Rosmy-newsletter-title{
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+    top: 163px;
+    left: 250px;
+}
+p.Rosmy-newsletter-paragraph{
+    width: 1075px;
+    text-align: center;
+    position: relative;
+    top: 124px;
+    left: 211px;
+    font-size: 20pt;
+}
+/*Rosmy's Photo*/
+img.Rosmy-photo{
+    width: 300px;
+    position: relative;
+    top: 150px;
+    left: 1000px;
+}
+/* Rosmy's Newsletter signature*/
+p.Rosmy-newsletter-signature{
+    width: 400px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 150px;
+    left: 948px;
+}
+/* Prakash's newsletter article */
+section.Prakash-newsletter-content-section{
+height: 1650px;
+}
+h1.Prakash-newsletter-title{
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+    top: 163px;
+    left: 250px;
+}
+p.Prakash-newsletter-paragraph{
+    width: 1075px;
+    text-align: center;
+    position: relative;
+    top: 124px;
+    left: 211px;
+    font-size: 20pt;
+}
+/*Prakash's Photo*/
+img.Prakash-photo{
+    width: 300px;
+    position: relative;
+    top: 150px;
+    left: 1000px;
+}
+/* Prakash's Newsletter signature*/
+p.Prakash-newsletter-signature{
+    width: 400px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 150px;
+    left: 948px;
+}
+/* Raghunandhan's newsletter article (Tamil) */
+section.Raghunandhan-tamil-newsletter-content-section{
+height: 2350px;
+}
+h1.Raghunandhan-tamil-newsletter-title{
+    width: 1075px;
+    text-align: center;
+    position: relative;
+    top: 54px;
+    left: 211px;
+    font-size: 24pt;
+}
+p.Raghunandhan-tamil-newsletter-paragraph{
+    width: 1075px;
+    text-align: center;
+    position: relative;
+    top: 84px;
+    left: 211px;
+    font-size: 20pt;
+}
+/*Raghunandhan's Photo*/
+img.Raghunandhan-tamil-photo{
+    width: 300px;
+    position: relative;
+    top: 100px;
+    left: 950px;
+}
+/* Raghunandhan's Newsletter signature*/
+p.Raghunandhan-tamil-newsletter-signature{
+    width: 400px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 120px;
+    left: 890px;
+}
+/* Shaji's newsletter article (English) */
+section.Shaji-newsletter-content-section{
+height: 2050px;
+}
+h1.Shaji-newsletter-title{
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+    top: 153px;
+    left: 250px;
+}
+p.Shaji-newsletter-paragraph{
+    width: 1075px;
+    text-align: center;
+    position: relative;
+    top: 174px;
+    left: 211px;
+    font-size: 20pt;
+}
+/* Shaji's Photo */
+img.Shaji-photo{
+    width: 300px;
+    position: relative;
+    top: 150px;
+    left: 943px;
+}
+/* Shaji's Newsletter signature*/
+p.Shaji-newsletter-signature{
+    width: 400px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 150px;
+    left: 893px;
+}
+/* Shaji's newsletter article (Tamil) */
+section.Shaji-tamil-newsletter-content-section{
+height: 3140px;
+}
+h1.Shaji-tamil-newsletter-title{
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+    top: 133px;
+    left: 250px;
+}
+p.Shaji-tamil-newsletter-paragraph{
+    width: 1075px;
+    text-align: center;
+    position: relative;
+    top: 204px;
+    left: 211px;
+    font-size: 20pt;
+}
+/* Shaji's Photo */
+img.Shaji-tamil-photo{
+    width: 300px;
+    position: relative;
+    top: 183px;
+    left: 943px;
+}
+/* Shaji's Newsletter signature*/
+p.Shaji-tamil-newsletter-signature{
+    width: 400px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 183px;
+    left: 893px;
+}
+/* Shaji's newsletter article (Malayalam) */
+section.Shaji-malayalam-newsletter-content-section{
+height: 3050px;
+}
+h1.Shaji-malayalam-newsletter-title{
+    width: 1000px;
+    text-align: center;
+    position: absolute;
+    top: 153px;
+    left: 250px;
+}
+p.Shaji-malayalam-newsletter-paragraph{
+    width: 1075px;
+    text-align: center;
+    position: relative;
+    top: 224px;
+    left: 211px;
+    font-size: 20pt;
+}
+/* Shaji's Photo */
+img.Shaji-malayalam-photo{
+    width: 300px;
+    position: relative;
+    top: 194px;
+    left: 943px;
+}
+/* Shaji's Newsletter signature*/
+p.Shaji-malayalam-newsletter-signature{
+    width: 400px;
+    text-align: center;
+    font-size: 18pt;
+    position: relative;
+    top: 198px;
+    left: 893px;
+}
+/* Best of DTM */
+h1.trip-down-memory-lane{
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+/* Video Collage*/
+div.video-container{
+    width: 500px;
+    position: relative;
+    top: 70px;
+    left: 500px;
+}
+video.video-controls{
+    width: 500px;
+    height: 360px;
+}
